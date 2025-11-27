@@ -1,0 +1,57 @@
+### prompt
+
+@index.ts 에다가 mcp tool 추가해줘. 
+도구 이름은  greeting으로 하고 유저에게 이름과 언어를 입력받아서 해당 언어로 인사말을 반환해주는 도구야
+
+calc라고 하는 도구를 추가할거야. 
+두개의 숫자와 하나의 연산자를 입력받아서 계산후 결과를 반환해주는 도구를 추가해줘
+
+유저에게 timezone을 입력받아서 현재 시간을 반환하는 도구를 추가해줘
+
+해당 mcp server에 리소스 추가해줘
+단순하게 현재 가짜 서버 정보를 반환하게 해줘
+
+mcp server prompt 추가해줘
+code_review라는 이름으로 추가할거고, 유저에게 코드를 받아서 코드 리뷰할 수 있는 프롬프트를 추가해줘
+
+이미지 생성 MCP Tool 추가해
+- 입력 Parameter (단일): prompt
+- 도구 호출 결과: base64-encoded-data image 형식
+~~~
+
+ai-mcp-server-test라는 이름으로 Github Repository 생성하고  main  브랜치에  push해
+
+현재 MCP 서버를 smithery에 배포하려 하는데 요구사항 세팅해줘:
+# TypeScript Servers
+~~~~
+
+### terminal
+terminal 
+> npm install
+
+> npx tsc 
+: ts file -> js file complie
+ # 여기서 js file을 업데이트 했으면 cursor settings로 가서 해당 mcp server를 껏다가 켜야함
+
+> npx @modelcontextprotocol/inspector node build/index.js
+: 서버 실행
+
+> npm install
+: hugging face install
+
+> npx tsc
+: js code 컴파일
+
+# index.ts에서 fal-ai를 auto로 변경 -> hugging face 사용 가능
+
+> gh auth login
+> gh auth status
+> git init
+> npm install
+> npm run dev
+ : 로컬에서 배포시 상황 가정 (in smithery)
+
+
+### 기타
+fal-ai => auto
+

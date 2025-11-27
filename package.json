@@ -3,11 +3,13 @@
     "version": "1.0.0",
     "main": "index.js",
     "type": "module",
+    "module": "src/index.ts",
     "bin": {
         "mcp-server": "./build/index.js"
     },
     "scripts": {
-        "build": "tsc && chmod 755 build/index.js"
+        "build": "npx smithery build",
+        "dev": "npx smithery dev"
     },
     "files": [
         "build"
@@ -22,6 +24,7 @@
         "zod": "^3.25.76"
     },
     "devDependencies": {
+        "@smithery/cli": "^1.4.6",
         "@types/node": "^24.5.2",
         "typescript": "^5.9.2"
     }

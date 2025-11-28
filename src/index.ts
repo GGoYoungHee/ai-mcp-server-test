@@ -215,7 +215,7 @@ export default function createServer({ config }: { config: z.infer<typeof config
 
                 const image = await client.textToImage(
                     {
-                        provider: 'fal-ai',
+                        provider: 'auto',
                         model: 'black-forest-labs/FLUX.1-schnell',
                         inputs: prompt,
                         parameters: { num_inference_steps: 5 }
